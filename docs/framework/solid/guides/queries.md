@@ -1,13 +1,9 @@
 ---
 id: queries
 title: Queries
-ref: docs/framework/react/guides/queries.md
+ref: docs/framework/solid/guides/queries.md
 replace:
   {
-    '@tanstack/react-query': '@tanstack/solid-query',
-    'useMutationState[(]': 'useMutationState(() => ',
-    'useMutation[(]': 'useMutation(() => ',
-    'useQuery[(]': 'useQuery(() => ',
-    'useQueries[(]': 'useQueries(() => ',
+    'const result = useQuery(() => { queryKey: ['todos'], queryFn: fetchTodoList })': 'const result = useQuery(() => ({ queryKey: ['todos'], queryFn: fetchTodoList }))',
   }
 ---
